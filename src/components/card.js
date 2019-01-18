@@ -4,10 +4,9 @@ import Button from './button'
 
 const Card = (props) => {
   return (
-    <div className="card col-sm-4 mx-2 my-2">
+    <div className="card col-sm-4 mx-2 my-2 bg-dark" >
       <div className="card-body">
-        {/* <h5 className="card-title">{props.title}</h5> */}
-        <p className="card-text">{props.quote}</p>
+        <p className="card-text text-white font-weight-bolder">{props.quote}</p>
         {props.tags.map((tag, idx) => {
           return <Button 
             key={idx}
